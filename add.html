@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/add.css">
+  <title>Добавление</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="header_nav">
+        <h1>ФИЛЬМОТЕКА</h1>
+        <div class="links">
+          <a href="index.html" class="link">ГЛАВНАЯ</a>
+          <a href="add.html" class="link">ДОБАВИТЬ</a>
+        </div>
+        <input type="search" class="search" placeholder="Поиск">
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <h1 class="title">Добавление</h1>
+      <div class="form">
+        <div class="options">
+          <div class="options_left">
+            <input type="text" class="inp title" placeholder="Название">
+            <input type="text" class="inp country" placeholder="Страна">
+            <input type="text" class="inp director" placeholder="Режиссер">
+            <input type="text" class="inp producer" placeholder="Продюсер">
+            <input type="text" class="inp komposer" placeholder="Композитор">
+          </div>
+          <div class="options_right">
+            <input type="text" class="inp year" placeholder="Год производства">
+            <input type="text" class="inp budget" placeholder="Бюджет">
+            <input type="text" class="inp genre" placeholder="Жанр">
+            <input type="text" class="inp time" placeholder="Время">
+            <div class="age">
+              <select>
+                <option>6+</option> 
+                <option>8+</option> 
+                <option>10+</option> 
+                <option>12+</option> 
+                <option>14+</option> 
+                <option>16+</option> 
+                <option>18+</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        
+        <div class="description">
+
+        </div>
+        <div class="desc">
+          <label class="desc" for="comment">Описание:</label><br>
+          <textarea id="comment" name="comment" rows="9" cols="83" required></textarea>
+        </div>
+      </div>
+      <div class="image-upload">
+        <input type="file" class="inp image" accept="image/*" />
+        <button id="uploadButton" class="btn">Загрузить обложку</button>
+        <progress id="uploadProgress" max="100" value="0"></progress>
+        <div id="imagePreview"></div>
+      </div>
+      <button id="addButton" class="btn">Добавить</button>
+    </div>
+  </section>
+
+  
+
+  <script src="dest/script.js"></script>
+</body>
+</html>

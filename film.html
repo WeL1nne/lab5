@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/film.css">
+  <title>Кот в сапогах 2</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="header_nav">
+        <h1>ФИЛЬМОТЕКА</h1>
+        <div class="links">
+          <a href="index.html" class="link">ГЛАВНАЯ</a>
+          <a href="add.html" class="link">ДОБАВИТЬ</a>
+        </div>
+        <input type="search" class="search" placeholder="Поиск">
+      </nav>
+    </div>
+  </header>
+  <section>
+    <div class="container">
+      <h1 class="title">Кот в сапогах 2: Последнее желание</h1>
+      <div class="film">
+        <div class="player">
+          <img src="images/player.png" alt="">
+        </div>
+
+        <div class="options">
+          <span id="year">Год производства: </span><br>
+          <span id="country">Страна: </span><br>
+          <span id="genre">Жанр: </span><br>
+          <span id="director">Режиссер: </span><br>
+          <span id="producer">Продюсер: </span><br>
+          <span id="komposer">Композитор: </span><br>
+          <span id="budget">Бюджет: </span><br>
+          <span id="time">Длительность: </span><br>
+          <span id="age">Возраст: </span><br>
+          <span id="mark">Оценка: </span><br>
+        </div>
+      </div>
+      <div class="section">
+        <span class="description">
+
+        </span>
+        <div class="form">
+          <form>
+            <div class="com_info">
+              <div class="com_name">
+                <label for="name">Имя:</label>
+                <input type="text" class="name" id="name" name="name" required>
+              </div>
+          
+              <div class="com_rate">
+                <label for="rating">Оценка:</label>
+                <select id="rating" name="rating">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+            </div>
+        
+            <div class="com_com">
+              <label class="otz" for="comment">Отзыв:</label><br>
+              <textarea id="comment" name="comment" rows="9" cols="83" required></textarea>
+            </div>
+
+            <input class="btn" type="submit" value="Оставить">
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="dest/script.js"></script>
+ 
+  
+</body>
+</html>

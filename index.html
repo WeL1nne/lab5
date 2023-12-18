@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <title>lab 3</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="header_nav">
+        <h1>ФИЛЬМОТЕКА</h1>
+        <div class="links">
+          <a href="index.html" class="link">ГЛАВНАЯ</a>
+          <a href="add.html" class="link">ДОБАВИТЬ</a>
+        </div>
+        <input type="search" class="search" placeholder="Поиск">
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="filters">
+        <div class="filter">
+          <span class="filter_name">Год</span>
+          <select class="year-filter">
+            <option>2000</option>
+            <option>2001</option>
+            <option>2002</option>
+            <option>2003</option>
+            <option>2004</option>
+            <option>2005</option>
+            <option>2006</option>
+            <option>2007</option>
+            <option>2008</option>
+            <option>2009</option>
+            <option>2010</option>
+            <option>2011</option>
+            <option>2012</option>
+            <option>2013</option>
+            <option>2014</option>
+            <option>2015</option>
+            <option>2016</option>
+            <option>2017</option>
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+            <option>2021</option>
+            <option>2022</option>  
+          </select>
+        </div>
+
+        <div class="filter">
+          <span class="filter_name">Жанр</span>
+          <select class="genre-filter">
+            <option>Комедия</option> 
+            <option>Мультфильм</option> 
+            <option>Ужасы</option> 
+            <option>Фантастика</option> 
+            <option>Триллер</option> 
+            <option>Боевик</option> 
+            <option>Мелодрама</option> 
+            <option>Детектив</option> 
+            <option>Приключения</option> 
+            <option>Фентези</option> 
+            <option>Аниме</option> 
+            <option>Драма</option> 
+            <option>Криминал</option> 
+          </select>
+        </div>
+
+        <div class="filter">
+          <span class="filter_name">Страна</span>
+          <input type="search" class="country-filter" placeholder="Страна">
+        </div>
+
+        <div class="filter">
+          <span class="filter_name">Возраст</span>
+          <select class="age-filter">
+            <option>6+</option> 
+            <option>8+</option> 
+            <option>10+</option> 
+            <option>12+</option> 
+            <option>14+</option> 
+            <option>16+</option> 
+            <option>18+</option>
+          </select>
+        </div>
+      </div>
+      <div class="btns">
+        <button class="btn">Найти</button>
+        <button class="btn">Сбросить</button>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container films filmContainer" id="filmContainer">
+      <div class="row">
+        <div class="card">
+          <a href="film.html" class="film">
+            <img class="image" src="images/card1.png" alt="">
+          </a>
+          <div class="card_title">Кот в сапогах 2: Последнее желание</div>
+          <button id="deleteButton" class="delete_button btn">Удаление</button>
+
+        </div>
+
+        <div class="card">
+          <a href="#" class="film">
+            <img class="image" src="images/card2.png" alt="">
+          </a>
+          <div class="card_title">Зеленая книга</div>
+          <button id="deleteButton" class="delete_button btn">Удаление</button>
+
+        </div>
+
+        <div class="card">
+          <a href="#" class="film">
+            <img class="image" src="images/card3.png" alt="">
+          </a>
+          <div class="card_title">Рататуй</div>
+          <button id="deleteButton" class="delete_button btn">Удаление</button>
+
+        </div>
+
+        <div class="card">
+          <a href="#" class="film">
+            <img class="image" src="images/card4.png" alt="">
+          </a>
+          <div class="card_title">Твое имя</div>
+          <button id="deleteButton" class="delete_button btn">Удаление</button>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="card">
+          <a href="#" class="film">
+            <img class="image" src="images/card5.png" alt="">
+          </a>
+          <div class="card_title">Гарри Поттер и Кубок огня</div>
+          <button id="deleteButton" class="delete_button btn">Удаление</button>
+
+        </div>
+
+        <div class="card">
+          <a href="#" class="film">
+            <img class="image" src="images/card6.png" alt="">
+          </a>
+          <div class="card_title">Властелин колец: Возвращение короля</div>
+          <button id="deleteButton" class="delete_button btn">Удаление</button>
+
+        </div>
+
+        <div class="card">
+          <a href="#" class="film">
+            <img class="image" src="images/card7.png" alt="">
+          </a>
+          <div class="card_title">Интерстеллар</div>
+          <button id="deleteButton" class="delete_button btn">Удаление</button>
+
+        </div>
+
+        <div class="card">
+          <a href="#" class="film">
+            <img class="image" src="images/card8.png" alt="">
+          </a>
+          <div class="card_title">1+1</div>
+          <button id="deleteButton" class="delete_button btn">Удаление</button>
+
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <script src="dest/script.js"></script>
+  
+</body>
+</html>
